@@ -8,11 +8,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v3
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: "2.7"
-        bundler-cache: true
     - run: npm install https://github.com/GSA/lighthouse-plugin-edx#main
       shell: bash
     - name: Audit preview URL with Lighthouse
