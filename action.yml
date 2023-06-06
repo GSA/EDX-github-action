@@ -16,6 +16,7 @@ runs:
       uses: treosh/lighthouse-ci-action@v10
       with:
         configPath: ${{ inputs.config-path }}
+        uploadArtifacts: false
         temporaryPublicStorage: true
     - name: Format Lighthouse score
       id: format_lighthouse_score
