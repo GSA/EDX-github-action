@@ -4,7 +4,7 @@ inputs:
   config-path:
     description: "Config path"
     required: true
-    default: "lighthouserc.js"
+    default: "./lighthouserc.js"
 runs:
   using: "composite"
   steps:
@@ -12,7 +12,7 @@ runs:
       shell: bash
     - name: Audit preview URL with Lighthouse
       id: lighthouse_audit
-      uses: treosh/lighthouse-ci-action@v3
+      uses: treosh/lighthouse-ci-action@v10
       with:
         configPath: ${{ github.event.inputs.config-path }}
         temporaryPublicStorage: true
