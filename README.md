@@ -19,7 +19,7 @@ with:
 
 ## Inputs
 
-### `config-file`
+### `config-path`
 
 **Optional** Path to Lighthouse configuration file.
 
