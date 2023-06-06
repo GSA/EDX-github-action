@@ -39,7 +39,7 @@ runs:
               `| ${score(result.accessibility)} Accessibility | ${result.accessibility} |`,
               `| ${score(result['best-practices'])} Best practices | ${result['best-practices']} |`,
               `| ${score(result.seo)} SEO | ${result.seo} |`,
-              `| ${score(result.pwa)} PWA | ${result.pwa} |`,
+              `| ${score(result.pwa)} GSA EDX | ${result.lighthouse-plugin-edx} |`,
               ' ',
               `*Lighthouse ran on [${Object.keys(links)[0]}](${Object.keys(links)[0]})*`
           ].join('\n')
