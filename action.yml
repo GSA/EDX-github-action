@@ -8,15 +8,16 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: npm install https://github.com/GSA/lighthouse-plugin-edx#main
+    - name: Install GSA EDX Lighthouse plugin
+      run: npm install https://github.com/GSA/lighthouse-plugin-edx#main
       shell: bash
-    - name: Audit preview URL with Lighthouse
+    - name: Audit site with Lighthouse
       id: lighthouse_audit
       uses: treosh/lighthouse-ci-action@v10
       with:
-        configPath: ${{ github.event.inputs.config-path }}
+        configPath: ${{ inputs.config-path }}
         temporaryPublicStorage: true
-    - name: Format lighthouse score
+    - name: Format Lighthouse score
       id: format_lighthouse_score
       uses: actions/github-script@v3
       with:
