@@ -21,6 +21,7 @@ runs:
       with:
         node-version: 18
     - run: npm install https://github.com/GSA/lighthouse-plugin-edx#main
+      shell: bash
     - name: Audit preview URL with Lighthouse
       id: lighthouse_audit
       uses: treosh/lighthouse-ci-action@v3
