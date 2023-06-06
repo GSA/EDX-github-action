@@ -39,18 +39,13 @@ runs:
               `| ${score(result.accessibility)} Accessibility | ${result.accessibility} |`,
               `| ${score(result['best-practices'])} Best practices | ${result['best-practices']} |`,
               `| ${score(result.seo)} SEO | ${result.seo} |`,
-              `| ${score(result.pwa)} GSA EDX | ${result['lighthouse-plugin-edx']} |`,
-              ' ',
-              `*Lighthouse ran on [${Object.keys(links)[0]}](${Object.keys(links)[0]})*`
+              `| ${score(result.pwa)} GSA EDX | ${result['lighthouse-plugin-edx']} |`
           ].join('\n')
 
             core.setOutput("comment", comment);
-    - uses: jwalton/gh-find-current-pr@v1
-      id: finder
     - name: Add comment to PR
       id: comment_to_pr
       uses: marocchino/sticky-pull-request-comment@v2
       with:
-        number: ${{ steps.finder.outputs.pr }}
         message: |
           ${{ steps.format_lighthouse_score.outputs.comment }}
