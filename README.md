@@ -2,18 +2,18 @@
 
 > GitHub Action to run GSA EDX Lighthouse plugin
 
-This action integrates Lighthouse CI and the GSA EDX Lighthouse plugin with Github Actions environment.
+This action integrates Lighthouse CI and the GSA EDX Lighthouse plugin with Github Actions environment. The results of the audit are added as a pull request comment.
 
 ## Example
 
-Run Lighthouse on each push to the repo.
+Run Lighthouse on each pull request.
 
 Create `.github/workflows/main.yml` and include the `EDX-github-action` step.
 
 ```yml
 name: Lighthouse CI
 
-on: push
+on: [pull_request]
 
 permissions:
   pull-requests: write
@@ -62,7 +62,7 @@ Create `.github/workflows/main.yml` and include the `EDX-github-action` step.
 ```yml
 name: Lighthouse CI
 
-on: push
+on: [pull_request]
 
 permissions:
   pull-requests: write
@@ -111,7 +111,7 @@ Create `.github/workflows/main.yml` and include the `EDX-github-action` step.
 ```yml
 name: Lighthouse CI
 
-on: push
+on: [pull_request]
 
 permissions:
   pull-requests: write
@@ -159,7 +159,7 @@ Create `.github/workflows/main.yml` and include the `EDX-github-action` step.
 ```yml
 name: Lighthouse CI
 
-on: push
+on: [pull_request]
 
 permissions:
   pull-requests: write
