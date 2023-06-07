@@ -55,7 +55,7 @@ Make a `lighthouserc.json` file with [LHCI assertion syntax](https://github.com/
 <details>
  <summary>Use a directory of static files instead of a URL</summary><br>
 
-Create `.github/workflows/main.yml` and identify a `lighthouserc` file with `configPath`.
+Create `.github/workflows/main.yml` and include the `EDX-github-action` step.
 
 #### main.yml
 
@@ -104,7 +104,7 @@ Make a `lighthouserc.json` file with [LHCI assertion syntax](https://github.com/
 <details>
  <summary>Integrate with a Jekyll based site</summary><br>
 
-Create `.github/workflows/main.yml`:
+Create `.github/workflows/main.yml` and include the `EDX-github-action` step.
 
 #### main.yml
 
@@ -152,7 +152,7 @@ Make a `lighthouserc.json` file with [LHCI assertion syntax](https://github.com/
 <details>
  <summary>Use a configuration file in a custom location</summary><br>
 
-Create `.github/workflows/main.yml`:
+Create `.github/workflows/main.yml` and include the `EDX-github-action` step.
 
 #### main.yml
 
