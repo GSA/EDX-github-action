@@ -2,7 +2,7 @@
 
 > GitHub Action to run GSA EDX Lighthouse plugin
 
-This action integrates Lighthouse CI and the GSA EDX Lighthouse plugin with Github Actions environment. The results of the audit are added as a pull request comment.
+This composite action integrates Lighthouse CI and the GSA EDX Lighthouse plugin with Github Actions environment. The results of the audit are added as a pull request comment.
 
 ## Example
 
