@@ -1,7 +1,6 @@
 # GSA EDX GitHub Action
 
-> Audit URLs using [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-> and test performance with [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci).
+> GitHub Action to run GSA EDX Lighthouse plugin
 
 This action integrates Lighthouse CI and the GSA EDX Lighthouse plugin with Github Actions environment.
 
