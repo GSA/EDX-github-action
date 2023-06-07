@@ -6,7 +6,7 @@ This action integrates Lighthouse CI and the GSA EDX Lighthouse plugin with Gith
 
 ## Example
 
-Run Lighthouse on each push to the repo, test performance budget, save results as action artifacts.
+Run Lighthouse on each push to the repo.
 
 Create `.github/workflows/main.yml` and include the `EDX-github-action` step.
 
