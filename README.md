@@ -4,6 +4,8 @@
 
 This composite action integrates Lighthouse CI and [lighthouse-plugin-edx](https://github.com/GSA/lighthouse-plugin-edx) with Github Actions environment. The results of the Lighthouse audit are added as a pull request comment.
 
+<img width="931" alt="Screen shot of pull request comment" src="https://github.com/GSA/EDX-github-action/assets/1178494/3b6ef293-2422-4a14-9e5c-191ab4d956a5">
+
 ## Example
 
 Run Lighthouse on each pull request.
