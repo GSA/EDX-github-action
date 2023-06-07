@@ -1,10 +1,9 @@
 name: "EDX Github Action"
-description: "EDX Github Action"
+description: "GitHub Action to run GSA EDX Lighthouse plugin"
 inputs:
   config-path:
     description: "Config path"
-    required: true
-    default: "./lighthouserc.js"
+    required: false
 runs:
   using: "composite"
   steps:
