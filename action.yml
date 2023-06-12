@@ -3,7 +3,8 @@ description: "GitHub Action to run GSA EDX Lighthouse plugin"
 inputs:
   config-path:
     description: "Config path"
-    required: false
+    default: "./lighthouserc.json"
+    required: true
 runs:
   using: "composite"
   steps:
