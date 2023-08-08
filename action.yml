@@ -35,7 +35,7 @@ runs:
               `⚡️ [Lighthouse report](${Object.values(links)[0]}) for the changes in this PR:`,
               '| Category | Score |',
               '| --- | --- |',
-              `| ${score(result.pwa)} GSA IT Standards | ${result['lighthouse-plugin-edx']} |`
+              `| ${score(result['lighthouse-plugin-edx'])} GSA IT Standards | ${result['lighthouse-plugin-edx']} |`
               `⚡️ Questions? [Learn more about this GitHub Action](https://github.com/GSA/EDX-github-action)`,
           ].join('\n')
 
