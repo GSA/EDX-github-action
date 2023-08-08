@@ -35,11 +35,8 @@ runs:
               `⚡️ [Lighthouse report](${Object.values(links)[0]}) for the changes in this PR:`,
               '| Category | Score |',
               '| --- | --- |',
-              `| ${score(result.performance)} Performance | ${result.performance} |`,
-              `| ${score(result.accessibility)} Accessibility | ${result.accessibility} |`,
-              `| ${score(result['best-practices'])} Best practices | ${result['best-practices']} |`,
-              `| ${score(result.seo)} SEO | ${result.seo} |`,
-              `| ${score(result.pwa)} GSA EDX | ${result['lighthouse-plugin-edx']} |`
+              `| ${score(result.pwa)} GSA IT Standards | ${result['lighthouse-plugin-edx']} |`
+              `⚡️ Questions? [Learn more about this GitHub Action](https://github.com/GSA/EDX-github-action)`,
           ].join('\n')
 
             core.setOutput("comment", comment);
