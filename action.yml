@@ -36,7 +36,7 @@ runs:
               '| Category | Score |',
               '| --- | --- |',
               `| ${score(result['lighthouse-plugin-edx'])} GSA IT Standards | ${result['lighthouse-plugin-edx']} |`,
-              '⚡️ Questions? [Learn more about this GitHub Action](https://github.com/GSA/EDX-github-action)'',
+              'Questions? [Learn more about this GitHub Action](https://github.com/GSA/EDX-github-action)',
           ].join('\n')
 
             core.setOutput("comment", comment);
